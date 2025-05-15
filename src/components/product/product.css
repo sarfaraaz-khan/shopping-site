@@ -1,0 +1,99 @@
+.productContainer > p,
+.categorySection > p {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: #ffff;
+  padding: 10px;
+}
+
+.product {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  border-radius: 10px;
+  padding: 5px;
+  overflow: hidden;
+  margin: 2px;
+  max-height: 3500px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 20px;
+}
+
+.cardHead {
+  width: 280px;
+  height: 200px;
+}
+
+.cardHead > img {
+  max-width: 95%;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: left;
+  width: 100%;
+}
+
+.cardBody > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.cardBody > div > h3 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.cardBody > div > span {
+  margin: 0px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBody > button {
+  border: none;
+  outline: none;
+  background-color: #ff0b55;
+  padding: 10px 10px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 98%;
+}
+
+.cardBody > button:hover {
+  background-color: #ffff;
+  border: 1px solid #ff0b55;
+  color: #ff0b55;
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    justify-content: center;
+  }
+}
